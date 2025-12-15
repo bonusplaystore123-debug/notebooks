@@ -2,14 +2,48 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Servidor Minecraft</title>
+    <title>Goods Server</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #1e1e1e, #0f0f0f);
             color: white;
+            margin: 0;
+        }
+        /* Barra superior */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #121212;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+            z-index: 1000;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #00e676;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            opacity: 0.85;
+        }
+        nav a:hover {
+            opacity: 1;
+            color: #00e676;
+        }
+        /* Conteúdo */
+        main {
             text-align: center;
-            padding-top: 120px;
+            padding-top: 140px;
         }
         h1 {
             font-size: 40px;
@@ -31,21 +65,80 @@
         button:hover {
             background: #00e676;
         }
+        /* Seções */
+        section {
+            margin-top: 80px;
+        }
+        .box {
+            background: rgba(255,255,255,0.05);
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 16px;
+        }
+        footer {
+            margin: 60px 0 30px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
 
-<h1>⛏️ Goods Server</h1>
-<p>Clique no botão para entrar no servidor</p>
+<header>
+    <h2>⛏️ Goods Server</h2>
+    <nav>
+        <a href="#info">Informações</a>
+        <a href="#discord">Discord</a>
+        <a href="#versao">Versão</a>
+    </nav>
+</header>
 
-<a href="minecraft://?addExternalServer=SERVER CANDY WORLD AMIGOS 2.0 dezembro|green-females.gl.at.ply.gg:13451">
-    <button>🎮 Entrar no Servidor</button>
-</a>
+<main>
+    <h1>⛏️ Goods Server</h1>
+    <p>Clique no botão para entrar no servidor</p>
 
-<p style="margin-top:40px;font-size:14px;opacity:0.7;">
-IP: green-females.gl.at.ply.gg <br>
-Porta: 13451
-</p>
+    <a href="minecraft://?addExternalServer=SERVER CANDY WORLD AMIGOS 2.0 dezembro|green-females.gl.at.ply.gg:13451">
+        <button>🎮 Entrar no Servidor</button>
+    </a>
+
+    <section id="info">
+        <div class="box">
+            <h2>📌 Informações do Servidor</h2>
+            <p>🌍 <b>Servidor Minecraft – Candy World</b> 🌍</p>
+            <p>Bem-vindo(a)! Aqui é o grupo oficial do nosso server.</p>
+            <p>🎮 <b>Versão:</b> Bedrock & Java<br>
+               🚀 <b>Modo:</b> Survival (SMP)</p>
+            <p>👥 <b>Regras:</b> Respeito sempre, sem hacks, sem grief, sem spam</p>
+            <p>💬 Aqui combinamos eventos, tiramos dúvidas e postamos novidades do servidor</p>
+            <p>📢 Fique de olho para não perder atualizações importantes</p>
+            <p>⛏️🔥 Divirta-se e bom jogo!</p>
+            <p><b>IP:</b> green-females.gl.at.ply.gg<br>
+               <b>Porta:</b> 13451</p>
+        </div>
+    </section>
+
+    <section id="discord">
+        <div class="box">
+            <h2>💬 Discord Oficial</h2>
+            <p>Entre no nosso Discord para conversar, receber avisos e suporte.</p>
+            <p><a href="https://discord.gg/JMtAVvKq" style="color:#00e676;">👉 Entrar no Discord</a></p>
+        </div>
+    </section>
+
+    <section id="versao">
+        <div class="box">
+            <h2>⚙️ Versão do Servidor</h2>
+            <p><b>Minecraft:</b> 1.21.10</p>
+            <p><b>Compatibilidade:</b> Java + Bedrock (Geyser)</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Goods Server • Todos os direitos reservados
+    </footer>
+</main>
 
 </body>
 </html>
+
